@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        //item view layout
+
+        <ImageView
+            android:id="@+id/lyItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/hayo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aa6200EE"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/lyItemNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ikan Hias"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/lyItemLatin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Latin"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="#FFFFFF"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
